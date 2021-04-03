@@ -1,0 +1,102 @@
+:root{
+    --blue_color : #4285f4;
+    --red_color : #ea4335;
+    --green_color : #34a853;
+    --yellow_color : #fbbc05;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.o-area{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.arrow , .upper{
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+.arrow{
+    color: var(--blue_color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.upper{
+    font-size: 4rem;
+    letter-spacing: -0.15rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+}
+.G{
+    margin-left: 1rem;
+    color: var(--blue_color);
+}
+.o{
+    color : var(--yellow_color);
+    cursor: pointer;
+}
+.o.active{
+    pointer-events: none;
+    cursor: normal;
+}
+.o.active > .upper{
+    color : var(--red_color);
+}
+.o.active > .lower{
+    color: black;
+}
+.o:hover > .lower{
+    text-decoration: underline;
+}
+.gle{
+    margin-right: 1rem;
+}
+.g{
+    color : var(--blue_color);
+}
+.l{
+    color : var(--green_color);
+    margin-left: -1rem;
+}
+.e{
+    color : var(--red_color);
+    margin-left: -1rem;
+}
+.text , .lower{
+    height: 1rem;
+    line-height: 1rem;
+    color: var(--blue_color);
+}
+.pre , .next{
+    cursor: pointer;
+    display: none;
+}
+.pre.active{
+    display: block;
+}
+.next.active{
+    display: block;
+}
+.pre:hover > .text{
+    text-decoration: underline;
+}
+.G:hover :root > .pre > .text{
+    text-decoration: underline;
+}
+.next:hover > .text{
+    text-decoration: underline;
+}
