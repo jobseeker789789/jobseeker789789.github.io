@@ -98,13 +98,28 @@ function set_date(year , month , date){
 
 temp_img_url = "kakaopay.jpg";
 temp_title = "카카오페이";
-temp_message = "[안내] 멤버쉽 이용안내";
+temp_message = `[안내] 멤버쉽 이용안내`;
 temp_date_time = set_date(2021,3,23);
 temp_alert = 1;
+create_chat_room(temp_img_url , temp_title , temp_message , temp_date_time , temp_alert);
 
-for(var i=0; i<30; i++){
-    create_chat_room(temp_img_url , temp_title , temp_message , temp_date_time , temp_alert);
-}
+temp_img_url = "toss.jpg";
+temp_title = "토스";
+temp_message = `결제 되었습니다.`;
+temp_date_time = set_date(2021,3,23);
+temp_alert = 1;
+create_chat_room(temp_img_url , temp_title , temp_message , temp_date_time , temp_alert);
+
+temp_img_url = "toss.jpg";
+temp_title = "토스";
+temp_message = `결제 되었습니다.`;
+temp_date_time = set_date(2021,3,23);
+temp_alert = 1;
+create_chat_room(temp_img_url , temp_title , temp_message , temp_date_time , temp_alert);
+
+// for(var i=0; i<30; i++){
+//     create_chat_room(temp_img_url , temp_title , temp_message , temp_date_time , temp_alert);
+// }
 
 
 

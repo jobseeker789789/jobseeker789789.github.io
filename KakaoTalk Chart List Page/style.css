@@ -58,7 +58,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
+    background-color: #000;
 }
 .full_screen{
     width: 1080px;

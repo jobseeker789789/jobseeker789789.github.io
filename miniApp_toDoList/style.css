@@ -52,11 +52,12 @@ body{
 #APP{
     width: 480px;
     height: 640px;
-    background-color: #fefefc;
-    border:6px solid #e6eaec;
+    background-color: #fff;
+    /* border:6px solid #e6eaec; */
     border-radius: 18px;
     padding: 21px 0;
     position: relative;
+    overflow: hidden;
 }
 #APP * {
     transition: all .35s;
@@ -162,19 +163,18 @@ section{
         }
         
 .hidden_area{
-    background-color: #f6fafc;
+    box-shadow: 1px -3px 36px 1px rgba(0,0,0,0.61);
+    background-color: #fff;
     position: absolute;
     width: 480px;
-    height: 4px;
-    bottom: 4px;
+    height: 120px;
+    bottom: -120px;
     transition: all .35s;
-    border-top: 2px solid #eeeef4;
     overflow: hidden;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-radius: 18px;
 }
 #add_button:checked ~ .hidden_area{
-    height: 120px;
+    bottom: 0px;
 }
     .input_form{
         display: block;
@@ -193,16 +193,16 @@ input[type=checkbox]{
 }
 label[for=add_button]{
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 50%;
-    bottom : 0%;
+    top:50%;
     width: 64px;
     height: 64px;
     background-color: #36daac;
     border-radius: 60px;
     justify-content: center;
     align-items: center;
-    transform: translateX(-50%) translateY(48%);
+    transform: translateX(-50%) translateY(309px);
 }
     .inner_circle{
         display: block;
